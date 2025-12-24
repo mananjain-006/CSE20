@@ -1,1 +1,2 @@
-# CSE20
+# web-designing-workshop
+HTML and CSS project

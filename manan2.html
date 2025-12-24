@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Navbar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #0f0f0f;
+            padding: 12px 25px;
+            color: white;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color:white;
+            font-size: 14px;
+        }
+        .search-box {
+            flex: 1;
+            margin: 0 25px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 7px 12px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+
+        .cart-login {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 4px 0;
+        }
+        @media(max-width: 768px) {
+
+            .search-box,
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar">
+
+
+            <div class="logo">ShopEase</div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search products...">
+            </div>
+
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Categories</a>
+                <a href="#">Deals</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="cart-login">
+                <span>Cart 🛒</span>
+                <span>Login</span>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+</body>
+
+</html>

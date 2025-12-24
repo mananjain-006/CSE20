@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>experiment9</title> 
+    <style> 
+        * { 
+            padding: 0; 
+            margin: 0; 
+            box-sizing: 0; 
+        } 
+ 
+        body { 
+            background-color: lightgrey; 
+        } 
+ 
+        h1 { 
+            text-align: center; 
+        } 
+ 
+        .grid { 
+            display: grid; 
+            gap: 20px; 
+            grid-template-columns: repeat(4, 1fr); 
+ 
+        } 
+ 
+        .c { 
+            border: 10px solid black; 
+            display: inline-block; 
+            padding: 10px; 
+            margin-left: 15px; 
+ 
+        } 
+ 
+        .c1 { 
+            border: 10px solid black; 
+            display: inline-block; 
+            padding: 10px; 
+            margin-left: 15px; 
+ 
+        } 
+ 
+        .c2 { 
+            border: 10px solid black; 
+            display: inline-block; 
+            padding: 10px; 
+            margin-left: 15px; 
+ 
+        } 
+ 
+        .c3 { 
+            border: 10px solid black; 
+            display: inline-block; 
+            padding: 10px; 
+            margin-left: 15px; 
+ 
+        } 
+ 
+        h3 { 
+            text-align: center; 
+        } 
+ 
+        @media (max-width: 1024px) { 
+            .grid { 
+                grid-template-columns: repeat(2, 1fr); 
+                /* 2 columns for tablets */ 
+            } 
+        } 
+ 
+        @media (max-width: 600px) { 
+            .grid { 
+                grid-template-columns: 1fr; 
+                /* 1 column for mobile */ 
+            } 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+    <h1>Responsive Product Grid</h1> 
+    <div class="grid"> 
+        <div class="c"> 
+            <center><img height="200px" src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/MAY/2/2XfxRf8B_61ab7e1e0213426896d8eb40ca5e9788.jpg" alt=""></center> 
+            <h3>Jeans</h3> 
+            <p>High-quality jeans for men with solid belt.</p> 
+            <p class="price">₹1399</p> 
+        </div> 
+        <div class="c1"> 
+            <center><img height="200px" src="https://burst.shopifycdn.com/photos/tshirts.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt=""></center> 
+            <h3>T Shirt</h3> 
+            <p>Best High-quality tshirts available for mens</p> 
+            <p class="price">₹499</p> 
+        </div> 
+        <div class="c2"> 
+            <center><img height="200px" src="https://img.freepik.com/free-photo/portrait-young-handsome-male_23-2148884391.jpg?semt=ais_se_enriched&w=740&q=80" alt=""></center> 
+            <h3>Jacket</h3> 
+            <p>High-quality puffer jacket with perfect zip.</p> 
+            <p class="price">₹1499</p> 
+        </div> 
+        <div class="c3"> 
+            <center><img height="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjswFdQvZ1pN3_pf4sqD-5KDRwRk8QBKkjnw&s" alt=""></center> 
+            <h3>Jacket</h3> 
+            <p>High-quality varsity jacket for men.</p> 
+            <p class="price">₹2499</p> 
+        </div> 
+ 
+        <div></div> 
+ 
+</body> 
+ 
+</html>
